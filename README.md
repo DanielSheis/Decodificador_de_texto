@@ -1,3 +1,3 @@
 # Link para ver o projeto
 
-https://danielsheis.github.io/Decodificador_de_texto/
+<a href = "https://danielsheis.github.io/Decodificador_de_texto/" target = "_blank"> Clique aqui </a>
