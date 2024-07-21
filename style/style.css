@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --cor-primaria: #E7F0DC;
+    --cor-secundaria: #729762;
+    --cor-terciaria: #597445;
+
+    --cor-hover-botao-descriptografar: #c0c0c0f1;
+
+    --cor-footer: #99a88e;
+    --cor-footer-hover: #45523c;
+
+    --fonte-principal: "Inter", sans-serif;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: var(--cor-terciaria);
+    box-sizing: border-box;
+    border: 0;
+    font-family: var(--fonte-principal);
+}
+
+body {
+    width: 100vw;
+    background-color: var(--cor-primaria);
+}
+
+header {
+    display: flex;
+    margin: 8px 30px;
+    justify-content: space-between;
+}
+
+.botão-cor-da-pagina {
+    height: 45px;
+    width: 45px;
+    background-color: var(--cor-secundaria);
+    border-radius: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lua-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.sol-icon {
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+
+main {
+    width: 80%;
+    margin-top: 3%;
+    margin-left: 80px;
+    display: flex;
+    gap: 100px;
+}
+
+.conteiner-principal {
+    width: 50%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+}
+
+.input-mensagem {
+    width: 522px;
+    height: 406px;
+    background-color: var(--cor-primaria);
+    font-size: 24px;
+    padding: 10px 20px;
+    resize: none;
+    outline: none;
+}
+
+.conteiner-aviso {
+    display: flex;
+}
+
+.mensagem-aviso {
+    font-size: 14px;
+    margin: 10px 5px;
+}
+.conteiner-botoes-principal {
+    margin-bottom: 5px;
+    display: flex;
+    gap: 24px;
+}
+
+button {
+    width: 320px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao-Criptografar {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+}
+
+.botao-Criptografar:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.botao-Descriptografar {
+    border: 2px solid var(--cor-terciaria);
+}
+
+.botao-Descriptografar:hover {
+    background-color: var(--cor-hover-botao-descriptografar);
+}
+
+.conteiner-resultado {
+    word-break: keep-all;
+    width: 40%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-secundaria);
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.informacao-sem-mensagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.img-garota {
+    width: 280px;
+    height: 300px;
+}
+
+.titulo-resultado {
+    font-size: 16px;
+    width: 200px;
+    text-align: center;
+}
+
+.mensagem-resultado {
+    width: 200px;
+    font-size: 14px;
+    text-align: center; 
+}
+
+.conteiner-mensagem-informada {
+    width: 200px;
+    height: 460px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mensagem-decodificada {
+    width: 300px;
+    height: 380px;
+    font-size: 20px;
+    padding: 8px 8px;
+    resize: none;
+    outline: none;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.copiar-mensagem {
+    margin-bottom: 10px;
+    width: 280px;
+    height: 50px;
+}
+
+.copiar-mensagem:hover {
+    background-color: var(--cor-hover-botao-descriptografar);
+}
+
+footer {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+footer a {
+    color: var(--cor-footer);
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: var(--cor-footer-hover);
+}

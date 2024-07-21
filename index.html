@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js" defer></script>
+    <script src="./script/script_modo_noturno.js" defer></script>
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <h1>Decodificador</h1>
+        <button onclick="mudarModoDaPagina()" class="botão-cor-da-pagina">
+            <img src="./assets/lua_icon.svg" alt="Desenho de uma lua" class="lua-icon">
+            <img src="./assets/sol_icon.svg" alt="Desenho de um sol" class="sol-icon">
+        </button>
+    </header>
+    <main>
+        <section class="conteiner-principal">
+            <textarea class="input-mensagem" placeholder="Digite sua mensagem"></textarea>
+            <div class="conteiner-botao-e-aviso">
+                <div class="conteiner-aviso">
+                    <img src="./assets/info_icon.svg" alt="Simbolo de exclamação">
+                    <p class="mensagem-aviso">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="conteiner-botoes-principal">
+                    <button onclick="criptografarMensagem()" class="botao-Criptografar">Criptografar</button>
+                    <button onclick="descriptografarMensagem()" class="botao-Descriptografar">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <div class="conteiner-resultado">
+            <div class="informacao-sem-mensagem">
+                <img src="./assets/personagem.svg" alt="Garota com uma lupa olhando um diamanete" class="img-garota">
+                <h3 class="titulo-resultado">Nenhuma mensagem encontrada</h2>
+                <p class="mensagem-resultado">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="conteiner-mensagem-informada">
+                <textarea class="mensagem-decodificada" readonly ></textarea>
+                <button onclick="copiar()" class="copiar-mensagem" >Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Feito por <a href="https://github.com/DanielSheis" target="_blank">Daniel Miranda</a> 💻</p>
+    </footer>
+</body>
+</html>
