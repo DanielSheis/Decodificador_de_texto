@@ -33,6 +33,7 @@ function mudarModoDaPagina() {
         root.style.setProperty('--cor-secundaria', '#729762');
         root.style.setProperty('--cor-terciaria', '#597445');
         root.style.setProperty('--cor-footer', '#99a88e');
+        root.style.setProperty('--cor-hover-botao-descriptografar', '#c0c0c0f1');
 
         botaoDescriptografar.style.color = "#597445";
         copiarMensagem.style.color = "#597445";
