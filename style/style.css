@@ -24,14 +24,13 @@
 }
 
 body {
-    width: 100vw;
     background-color: var(--cor-primaria);
 }
 
 header {
     display: flex;
-    margin: 8px 30px;
     justify-content: space-between;
+    margin: 10px 10px;
 }
 
 .botão-cor-da-pagina {
@@ -44,59 +43,51 @@ header {
     justify-content: center;
 }
 
-.botão-cor-da-pagina:hover {
-    background-color: #8d8d8d;
-}
-
 .lua-icon {
-    height: 30px;
     width: 30px;
+    height: 30px;
 }
 
 .sol-icon {
-    height: 30px;
     width: 30px;
+    height: 30px;
     display: none;
 }
 
 main {
-    width: 80%;
-    margin-top: 3%;
-    margin-left: 80px;
-    display: flex;
-    gap: 100px;
-}
-
-.conteiner-principal {
-    width: 50%;
-    margin-left: 10%;
+    margin: 10% 0;
     display: flex;
     flex-direction: column;
-   justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.conteiner-botao-e-aviso {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteiner-botoes-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .input-mensagem {
-    width: 522px;
-    height: 406px;
     background-color: var(--cor-primaria);
-    font-size: 24px;
-    padding: 10px 20px;
+    width: 350px;
+    height: 400px;
+    font-size: 20px;
+    padding: 10px 10px;
     resize: none;
     outline: none;
 }
 
 .conteiner-aviso {
     display: flex;
-}
-
-.mensagem-aviso {
-    font-size: 14px;
-    margin: 10px 5px;
-}
-.conteiner-botoes-principal {
-    margin-bottom: 5px;
-    display: flex;
-    gap: 24px;
+    gap: 8px;
 }
 
 button {
@@ -124,47 +115,19 @@ button {
     background-color: var(--cor-hover-botao-descriptografar);
 }
 
-.conteiner-resultado {
-    word-break: keep-all;
-    width: 40%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--cor-secundaria);
-    border-radius: 32px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-.informacao-sem-mensagem {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-
 .img-garota {
-    width: 280px;
-    height: 300px;
+    display: none;
 }
 
-.titulo-resultado {
-    font-size: 16px;
-    width: 200px;
+.conteiner-resultado {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-}
-
-.mensagem-resultado {
-    width: 200px;
-    font-size: 14px;
-    text-align: center; 
+    gap: 10px;
 }
 
 .conteiner-mensagem-informada {
-    width: 200px;
-    height: 460px;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -172,20 +135,17 @@ button {
 }
 
 .mensagem-decodificada {
-    width: 300px;
-    height: 380px;
+    text-align: center;
     font-size: 20px;
     padding: 8px 8px;
     resize: none;
     outline: none;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
 }
 
 .copiar-mensagem {
-    margin-bottom: 10px;
-    width: 280px;
-    height: 50px;
+    border: 2px solid var(--cor-terciaria);
 }
 
 .copiar-mensagem:hover {
@@ -194,7 +154,7 @@ button {
 
 footer {
     text-align: center;
-    margin-top: 5px;
+    margin-bottom: 10px;
     font-size: 14px;
 }
 
@@ -203,6 +163,92 @@ footer a {
     font-weight: 700;
 }
 
-footer a:hover {
-    color: var(--cor-footer-hover);
+@media (min-width: 1000px) {
+    
+    header {
+        margin: 10px 60px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    main {
+        margin: 2% 0;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .conteiner-principal {
+        display: flex;
+        flex-direction: column;
+        margin-left: 130px;
+    }
+
+    .input-mensagem {
+        width: 700px;
+        height: 400px;
+    }
+
+    .conteiner-botoes-principal {
+        flex-direction: row;
+    }
+
+    .conteiner-resultado {
+        display: flex;
+        background-color: var(--cor-secundaria);
+        width: 25%;
+        height: 480px;
+        align-items: center;
+        border-radius: 32px;
+        gap: 200px;
+    }
+
+    .informacao-sem-mensagem {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .img-garota {
+        display: block;
+        width: 280px;
+        height: 300px;
+    }
+
+    .titulo-resultado {
+        font-size: 16px;
+        width: 200px;
+        text-align: center;
+    }
+
+    .conteiner-mensagem-informada {
+        width: 25%;
+        height: 460px;
+        display: none;
+        justify-content: space-between;
+    }
+    
+    .mensagem-resultado {
+        width: 60%;
+        font-size: 14px;
+        text-align: center; 
+    }
+
+    .mensagem-decodificada  {
+        margin-top: 10%;
+        width: 250%;
+        height: 380px;
+        background-color: var(--cor-secundaria);
+        color: var(--cor-primaria);
+        font-size: 20px;
+        padding: 20px 0;
+        text-align: start;
+    }
+
+    .copiar-mensagem {
+        width: 280px;
+        height: 50px;
+    }
 }
