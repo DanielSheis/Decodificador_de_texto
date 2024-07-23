@@ -188,6 +188,17 @@ footer a {
         height: 400px;
     }
 
+    .input-mensagem::-webkit-scrollbar {
+        background-color: #72976200;
+        width: 10px;
+    }
+    
+    .input-mensagem::-webkit-scrollbar-thumb {
+        background-color: var(--cor-terciaria);
+        border-radius: 38px;
+        cursor: pointer;
+    }
+
     .conteiner-botoes-principal {
         flex-direction: row;
     }
@@ -237,14 +248,26 @@ footer a {
     }
 
     .mensagem-decodificada  {
+        word-break: break-all;
         margin-top: 10%;
-        width: 250%;
+        width: 280%;
         height: 380px;
         background-color: var(--cor-secundaria);
         color: var(--cor-primaria);
         font-size: 20px;
         padding: 20px 0;
         text-align: start;
+    }
+
+    .mensagem-decodificada::-webkit-scrollbar {
+        background-color: #72976200;
+        width: 10px;
+    }
+    
+    .mensagem-decodificada::-webkit-scrollbar-thumb {
+        background-color: var(--cor-primaria);
+        border-radius: 38px;
+        cursor: pointer;
     }
 
     .copiar-mensagem {
